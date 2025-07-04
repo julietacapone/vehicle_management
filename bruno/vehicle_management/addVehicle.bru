@@ -1,0 +1,22 @@
+meta {
+  name: addVehicle
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/api/vehicles
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "licensePlate": "ABC1231",
+    "color": "Rojo",
+    "brand": "Toyota",
+    "model": "Corolla",
+    "entryTime": "2023-10-10T10:00:00",
+    "ownerId": 1
+  }
+}
